@@ -26,12 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Bai01Activity.class));
             }
         });
-//        btnBai2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, Bai02.class));
-//            }
-//        });
+        btnBai2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Bai02Activity.class));
+            }
+        });
 //        btnBai3.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
