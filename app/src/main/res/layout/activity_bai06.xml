@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bai06Activity">
+
+    <Button
+        android:id="@+id/buttonMin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Min"
+        app:layout_constraintBottom_toTopOf="@+id/buttonXuatXuoi"
+        app:layout_constraintEnd_toStartOf="@+id/buttonMax"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Max"
+        app:layout_constraintBottom_toTopOf="@+id/buttonXuatNguoc"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSapXepTang"
+        app:layout_constraintStart_toEndOf="@+id/buttonMin" />
+
+    <Button
+        android:id="@+id/buttonDemSoNT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Đém Số Nguyên Tố"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTongSoNT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonTongSoNT" />
+
+    <Button
+        android:id="@+id/buttonTongSoNT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="372dp"
+        android:text="Tổng Số Nguyên Tố"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonDemSoNT"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSapXepTang" />
+
+    <Button
+        android:id="@+id/buttonSapXepTang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="61dp"
+        android:text="Sắp Xếp Tăng"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTongSoNT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMax"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRandom" />
+
+    <Button
+        android:id="@+id/buttonXuatNguoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:text="Xuất Ngược"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonXuatXuoi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSapXepTang" />
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="93dp"
+        android:text="Tạo Mảng"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSapXepTang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhanTu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonXuatXuoi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="13dp"
+        android:text="Xuất Xuôi"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDemSoNT"
+        app:layout_constraintEnd_toStartOf="@+id/buttonXuatNguoc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Mảng"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRandom"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRandom" />
+
+    <EditText
+        android:id="@+id/editTextPhanTu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Nhập số lượng phần tử"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonRandom"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRandom"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Kết Quả"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/buttonDemSoNT"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDemSoNT" />
+</androidx.constraintlayout.widget.ConstraintLayout>

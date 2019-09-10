@@ -36,10 +36,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
-        android:text="Button"
+        android:text="Bai 3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnBai2"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBai4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="49dp"
+        android:text="Bai 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBai1" />
+
+    <Button
+        android:id="@+id/btnBai5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:text="Bai 5"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnBai4"
+        app:layout_constraintStart_toEndOf="@+id/btnBai4" />
 
     <TextView
         android:id="@+id/textView"
